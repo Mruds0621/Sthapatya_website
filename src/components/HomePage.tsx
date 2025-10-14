@@ -294,7 +294,7 @@ export function HomePage() {
       const currentSection = sectionElements.find((section) => {
         if (section.element) {
           const rect = section.element.getBoundingClientRect();
-          return rect.top <= 150 && rect.bottom >= 150;
+          return rect.top <= 250 && rect.bottom >= 250;
         }
         return false;
       });
@@ -788,7 +788,7 @@ export function HomePage() {
                 className="relative h-[240px] rounded-2xl overflow-hidden"
               >
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1758876202676-6dcc77aeaa70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJlZXIlMjBncm93dGglMjBvZmZpY2V8ZW58MXx8fHwxNzU5OTAzMzQzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="/image_data/Team_photo/team.jpg"
                   alt="Career"
                   className="w-full h-full object-cover"
                 />

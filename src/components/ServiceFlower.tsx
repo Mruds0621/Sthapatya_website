@@ -80,9 +80,9 @@ export function ServiceFlower() {
 
   return (
     <div className="relative w-full overflow-x-hidden">
-      <div className="flex items-center min-h-[850px]">
+      <div className="flex items-center min-h-[700px] overflow-hidden">
         {/* Left: Flower Structure - Center + Petals */}
-        <div className="relative w-[1000px] h-[1000px] -ml-[500px] flex-shrink-0">
+        <div className="relative w-[1000px] h-[800px] -ml-[500px] flex-shrink-0">
           
           {/* Flower Petals - Radiating outward from center - CLOCKWISE ROTATION */}
           {services.map((service, index) => {
@@ -411,7 +411,7 @@ export function ServiceFlower() {
                     />
                   </motion.div>
                   <div className="flex-1">
-                    <h3 className="text-3xl text-[#1e3a8a] mb-2" style={{ fontWeight: 600 }}>
+                    <h3 className="text-4xl text-[#1e3a8a] mb-2" style={{ fontWeight: 600 }}>
                       {selectedService.title}
                     </h3>
                     <div 
@@ -478,7 +478,7 @@ export function ServiceFlower() {
             <>
               {/* Default Overview */}
               <div className="space-y-4">
-                <h3 className="text-3xl text-[#1e3a8a]" style={{ fontWeight: 600 }}>
+                <h3 className="text-4xl text-[#1e3a8a]" style={{ fontWeight: 600 }}>
                   Our Comprehensive Services
                 </h3>
                 <p className="text-lg text-[#2563eb] leading-relaxed">
@@ -489,7 +489,7 @@ export function ServiceFlower() {
               </div>
 
               {/* All Service Names - Simple List */}
-              <div className="mt-6">
+              <div className="mt-0">
                 <ul className="space-y-2">
                   {services.map((service, index) => {
                     const Icon = service.icon;
