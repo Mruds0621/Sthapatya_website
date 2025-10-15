@@ -850,17 +850,17 @@ export function HomePage() {
                 },
                 {
                   name: "Pune Office",
-                    image: "/image_data/Our_Offices/Pune_office.jpg",
+                    image: "/image_data/Our_Offices/Pune_Office.jpeg",
                     address: "303,3rd floor,18 high street,baner pashan link road,Baner, Pune, Maharashtra, India 411045"
                 },
                 {
                   name: "Panvel Office",
-                    image: "/image_data/Our_Offices/Panvel_office.jpg",
+                    image: "/image_data/Our_Offices/Panvel_office.jpeg",
                   address: "Andheri East, Mumbai, Maharashtra 400069"
                 },              
                 {
                     name: "Thane Office",
-                    image: "/image_data/Our_Offices/Thane_office.jpg",
+                    image: "/image_data/Our_Offices/Thane_office.jpeg",
                     address: "1101, Lodha Supremus, Lodha Business District 2 Off Kolshet Road, Thane- West, Maharashtra, India 400607"
                 }
               ].map((office, index) => (
