@@ -16,7 +16,7 @@ function ServiceSlideshow() {
   const services = [
     {
       name: "Water Management",
-      image: "/image_data/Website_Hero_Section/water.jpg",
+      image: "/image_data/Website_Hero_Section/Water.jpg",
       direction: "right"
     },
     {
