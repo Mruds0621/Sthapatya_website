@@ -843,25 +843,25 @@ export function HomePage() {
             {/* Office Cards with Circular Images - More Compact */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
               {[
-                {
-                  name: "Thane Office",
-                  image: "https://images.unsplash.com/photo-1703355685639-d558d1b0f63e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDF8fHx8MTc1OTgzNTU2MHww&ixlib=rb-4.1.0&q=80&w=1080",
-                  address: "Sthapatya Consultants Pvt. Ltd., Thane West, Maharashtra 400601"
+                 {
+                  name: "Amaravati Office",
+                      image: "/image_data/Our_Offices/Amravati_office.jpg",
+                  address: "4, Swapnashri Colony, Siddhivinayak Nagar, Ashiyad Square,Shegaon Road, Amravati, Maharashtra, India 444604"
                 },
                 {
                   name: "Pune Office",
-                  image: "https://images.unsplash.com/photo-1666027891642-def4b1df549f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBvZmZpY2UlMjBlbnRyYW5jZXxlbnwxfHx8fDE3NTk5MTc3MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-                  address: "Business District, Pune, Maharashtra 411001"
+                    image: "/image_data/Our_Offices/Pune_office.jpg",
+                    address: "303,3rd floor,18 high street,baner pashan link road,Baner, Pune, Maharashtra, India 411045"
                 },
                 {
                   name: "Panvel Office",
-                  image: "https://images.unsplash.com/photo-1727805384247-9ca53a156d53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhlYWRxdWFydGVycyUyMGJ1aWxkaW5nfGVufDF8fHx8MTc1OTkxNzcwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+                    image: "/image_data/Our_Offices/Panvel_office.jpg",
                   address: "Andheri East, Mumbai, Maharashtra 400069"
-                },
+                },              
                 {
-                  name: "Amaravati Office",
-                  image: "https://images.unsplash.com/photo-1758081564729-e563d96565ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwb2ZmaWNlJTIwdG93ZXJ8ZW58MXx8fHwxNzU5OTE3NzAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-                  address: "Civil Lines, Nagpur, Maharashtra 440001"
+                    name: "Thane Office",
+                    image: "/image_data/Our_Offices/Thane_office.jpg",
+                    address: "1101, Lodha Supremus, Lodha Business District 2 Off Kolshet Road, Thane- West, Maharashtra, India 400607"
                 }
               ].map((office, index) => (
                 <motion.div
@@ -917,7 +917,7 @@ export function HomePage() {
                         href="mailto:info@sthapatyaconsultants.com" 
                         className="text-white hover:text-[#f59e0b] transition-colors text-sm"
                       >
-                        info@sthapatyaconsultants.com
+                        support@sthapatya.in
                       </a>
                     </div>
                   </div>
@@ -930,10 +930,10 @@ export function HomePage() {
                     <div className="flex-1">
                       <p className="text-sm text-white/70 mb-1">Call Us</p>
                       <a 
-                        href="tel:+912225551234" 
+                          href="tel: 1800 833 2700" 
                         className="text-white hover:text-[#f59e0b] transition-colors text-sm"
                       >
-                        +91 22 2555 1234
+                       1800 833 2700, 0721-2970300
                       </a>
                     </div>
                   </div>

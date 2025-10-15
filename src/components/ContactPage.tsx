@@ -19,19 +19,19 @@ export function ContactPage() {
     {
       icon: Mail,
       title: "Email Us",
-      content: "info@sthapatyaconsultants.com",
-      link: "mailto:info@sthapatyaconsultants.com",
+          content: "support@sthapatya.in",
+          link: "mailto:support@sthapatya.in",
     },
     {
       icon: Phone,
       title: "Call Us",
-      content: "+91 (022) 1234-5678",
-      link: "tel:+910221234567",
+        content: " 1800 833 2700",
+        link: "tel:1800 833 2700, 0721-2970300",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "Mumbai, Maharashtra",
+      content: "Pune, Maharashtra",
       link: "#",
     },
     {
@@ -44,25 +44,25 @@ export function ContactPage() {
 
   const offices = [
     {
-      city: "Mumbai",
+      city: "Amravati",
       address: "Headquarters, Mumbai, Maharashtra",
-      phone: "+91 (022) 1234-5678",
+          phone: "1800 833 2700, 0721-2970300",
     },
     {
       city: "Thane",
-      address: "Regional Office, Thane, Maharashtra",
-      phone: "+91 (022) 2345-6789",
+      address: "Branch Office, Thane, Maharashtra",
+        phone: "7028791416, +91 20-46700861",
     },
     {
       city: "Pune",
       address: "Branch Office, Pune, Maharashtra",
-      phone: "+91 (020) 3456-7890",
+        phone: "8975758104, +91 20-46700861",
     },
-    {
-      city: "Amravati",
-      address: "Branch Office, Amravati, Maharashtra",
-      phone: "+91 (0721) 4567-8901",
-    },
+    //{
+    //  city: "Amravati",
+    //  address: "Branch Office, Amravati, Maharashtra",
+    //  phone: "+91 (0721) 4567-8901",
+    //},
   ];
 
   return (
