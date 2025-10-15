@@ -14,11 +14,11 @@ import { districtData } from "./districtData"
 // Optimized Service Slideshow Component
 function ServiceSlideshow() {
   const services = [
-    //{
-    //  name: "Water Management",
-    //  image: "/image_data/Website_Hero_Section/water_management.jpg",
-    //  direction: "right"
-    //},
+    {
+      name: "Water Management",
+      image: "/image_data/Website_Hero_Section/water.jpg",
+      direction: "right"
+    },
     {
       name: "Trade License",
       image: "/image_data/Website_Hero_Section/Trade-license.jpg",
