@@ -31,7 +31,7 @@ export function ContactPage() {
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "Pune, Maharashtra",
+      content: "Amravati, Maharashtra",
       link: "#",
     },
     {
@@ -45,24 +45,24 @@ export function ContactPage() {
   const offices = [
     {
       city: "Amravati",
-      address: "Headquarters, Mumbai, Maharashtra",
+          address: "4, Swapnashri Colony, Siddhivinayak Nagar, Ashiyad Square,Shegaon Road, Amravati, Maharashtra, India 444604",
           phone: "1800 833 2700, 0721-2970300",
     },
     {
       city: "Thane",
-      address: "Branch Office, Thane, Maharashtra",
+          address: "1101, Lodha Supremus, Lodha Business District 2 Off Kolshet Road, Thane- West, Maharashtra, India 400607",
         phone: "7028791416, +91 20-46700861",
     },
     {
       city: "Pune",
-      address: "Branch Office, Pune, Maharashtra",
+        address: "303,3rd floor,18 high street,baner pashan link road,Baner, Pune, Maharashtra, India 411045",
         phone: "8975758104, +91 20-46700861",
     },
-    //{
-    //  city: "Amravati",
-    //  address: "Branch Office, Amravati, Maharashtra",
-    //  phone: "+91 (0721) 4567-8901",
-    //},
+    {
+      city: "Panvel",
+      address: "Branch Office, Panvel, Maharashtra",
+      phone: "+91 (0721) 4567-8901",
+    },
   ];
 
   return (
