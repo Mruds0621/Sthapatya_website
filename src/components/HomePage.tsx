@@ -803,60 +803,101 @@ export function HomePage() {
       </section>
 
       {/* Career Preview - Compact */}
-      <section id="career" className="py-4 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-4xl md:text-5xl text-[#1e3a8a] mb-4 text-center">Join Our Team</h2>
-
-            <div className="grid md:grid-cols-2 gap-5 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="relative h-[240px] rounded-2xl overflow-hidden"
-              >
-                <ImageWithFallback
-                  src="/image_data/Team_photo/team.jpg"
-                  alt="Career"
-                  className="w-full h-full object-cover"
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="space-y-5"
-              >
-                <p className="text-lg text-[#2563eb]">
-                  Be part of India's leading urban governance solutions provider. 
-                  We're always looking for talented individuals passionate about 
-                  transforming cities.
-                </p>
-                <div className="flex items-center gap-4">
-                  <Briefcase className="text-[#4f46e5]" size={24} />
-                  <p className="text-[#1e3a8a]">Multiple positions available across departments</p>
-                </div>
-                <Link to="/career">
-                  <AnimatedButton
-                    variant="secondary"
-                    icon={<ArrowRight size={18} />}
-                    className="mt-4 px-6 py-3"
+          <section id="career" className="py-4 px-4 bg-white">
+              <div className="max-w-6xl mx-auto">
+                  <motion.div
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-100px" }}
+                      transition={{ duration: 0.8 }}
                   >
-                    View Openings
-                  </AnimatedButton>
-                </Link>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+                      <h2 className="text-4xl md:text-5xl text-[#1e3a8a] mb-4 text-center">Join Our Team</h2>
+
+                      <div className="grid md:grid-cols-2 gap-5 items-center">
+                          <motion.div
+                              initial={{ opacity: 0, x: -50 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              viewport={{ once: true }}
+                              className="relative"
+                          >
+                              <Carousel className="w-full" opts={{ loop: true }}>
+                                  <CarouselContent>
+                                      {[
+                                          {
+                                              src: "https://images.unsplash.com/photo-1676275774289-6cc2e0a0203d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwbWVldGluZyUyMG9mZmljZXxlbnwxfHx8fDE3NjA2MDg2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                                              alt: "Team Meeting"
+                                          },
+                                          {
+                                              src: "https://images.unsplash.com/photo-1758518731457-5ef826b75b3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b3JrcGxhY2UlMjBjb2xsYWJvcmF0aW9ufGVufDF8fHx8MTc2MDY4ODUwOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                                              alt: "Professional Workplace"
+                                          },
+                                          {
+                                              src: "https://images.unsplash.com/photo-1758873268631-fa944fc5cad2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjB0ZWFtd29yayUyMGRpdmVyc2l0eXxlbnwxfHx8fDE3NjA2ODg1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                                              alt: "Team Collaboration"
+                                          },
+                                          {
+                                              src: "https://images.unsplash.com/photo-1758519288495-5f79a4bbab83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBjYXJlZXIlMjBncm93dGh8ZW58MXx8fHwxNzYwNjg4NTA4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                                              alt: "Career Growth"
+                                          },
+                                          {
+                                              src: "https://images.unsplash.com/photo-1554863678-59041638eb4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW0lMjB3b3JrfGVufDF8fHx8MTc2MDU5NDM3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                                              alt: "Engineering Team"
+                                          }
+                                      ].map((image, index) => (
+                                          <CarouselItem key={index}>
+                                              <div className="relative h-[240px] rounded-2xl overflow-hidden">
+                                                  <ImageWithFallback
+                                                      src={image.src}
+                                                      alt={image.alt}
+                                                      className="w-full h-full object-cover"
+                                                  />
+                                                  {/* Gradient overlay for better text readability */}
+                                                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                                                  {/* Optional caption */}
+                                                  <div className="absolute bottom-4 left-4 right-4">
+                                                      <p className="text-white text-sm backdrop-blur-sm bg-black/20 px-3 py-1 rounded-lg inline-block">
+                                                          {image.alt}
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </CarouselItem>
+                                      ))}
+                                  </CarouselContent>
+                                  <CarouselPrevious className="left-2" />
+                                  <CarouselNext className="right-2" />
+                              </Carousel>
+                          </motion.div>
+
+                          <motion.div
+                              initial={{ opacity: 0, x: 50 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              viewport={{ once: true }}
+                              transition={{ delay: 0.2 }}
+                              className="space-y-5"
+                          >
+                              <p className="text-lg text-[#2563eb]">
+                                  Be part of India's leading urban governance solutions provider.
+                                  We're always looking for talented individuals passionate about
+                                  transforming cities.
+                              </p>
+                              <div className="flex items-center gap-4">
+                                  <Briefcase className="text-[#4f46e5]" size={24} />
+                                  <p className="text-[#1e3a8a]">Multiple positions available across departments</p>
+                              </div>
+                              <Link to="/career">
+                                  <AnimatedButton
+                                      variant="secondary"
+                                      icon={<ArrowRight size={18} />}
+                                      className="mt-4 px-6 py-3"
+                                  >
+                                      View Openings
+                                  </AnimatedButton>
+                              </Link>
+                          </motion.div>
+                      </div>
+                  </motion.div>
+              </div>
+          </section>
 
       {/* Contact Preview - Compact */}
       <section id="contact" className="py-4 px-4 bg-gradient-to-b from-[#1e3a8a] to-[#4f46e5]">
