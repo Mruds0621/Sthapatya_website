@@ -212,7 +212,7 @@ function AboutSection({ scrollToSection }: { scrollToSection: (id: string) => vo
         />
             {/* Middle: Stats Box */}
             <DistrictStatsBox selectedDistrict={selectedDistrict} />
-        
+            
                       {/* Right: Company Description Card */}
                       <motion.div
                           initial={{ opacity: 0, y: 30 }}
@@ -275,7 +275,6 @@ function AboutSection({ scrollToSection }: { scrollToSection: (id: string) => vo
                               </div>
                           </div>
                       </motion.div>
-                  </div>
           </div>
 
           {/* Button on the left */}
