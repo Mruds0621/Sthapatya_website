@@ -212,38 +212,70 @@ function AboutSection({ scrollToSection }: { scrollToSection: (id: string) => vo
         />
             {/* Middle: Stats Box */}
             <DistrictStatsBox selectedDistrict={selectedDistrict} />
-            
-            {/* Right: Count Cards - 2x2 grid */}
-            <div className="grid grid-cols-2 gap-3 content-center">
-              <CountCard
-                icon={Building2}
-                count={100}
-                suffix="+"
-                label="Urban Local Bodies"
-                delay={0}
-              />
-              <CountCard
-                icon={MapPin}
-                count={50}
-                suffix="L+"
-                label="Properties Surveyed"
-                delay={0.1}
-              />
-              <CountCard
-                icon={Award}
-                count={25}
-                suffix="+"
-                label="Years of Excellence"
-                delay={0.2}
-              />
-              <CountCard
-                icon={Users}
-                count={200}
-                suffix="+"
-                label="Team Members"
-                delay={0.3}
-              />
-            </div>
+        
+                      {/* Right: Company Description Card */}
+                      <motion.div
+                          initial={{ opacity: 0, y: 30 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.8, delay: 0.2 }}
+                          className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-[#f1f5f9] border-2 border-[#4f46e5]/20 p-6 shadow-lg"
+                      >
+                          {/* Decorative corner accents */}
+                          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#4f46e5]/10 to-transparent rounded-bl-full" />
+                          <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-[#2563eb]/10 to-transparent rounded-tr-full" />
+
+                          <div className="relative z-10 h-full flex flex-col">
+                              {/* Icon Header */}
+                              <div className="flex items-center gap-3 mb-4">
+                                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#1e3a8a] to-[#4f46e5] flex items-center justify-center shadow-lg">
+                                      <Building2 className="text-white" size={24} />
+                                  </div>
+                                  <div>
+                                      <h3 className="text-lg text-[#1e3a8a]" style={{ fontWeight: 700 }}>Our Legacy</h3>
+                                      <p className="text-xs text-[#2563eb]">Building the Future of Governance</p>
+                                  </div>
+                              </div>
+
+                              {/* Description Text */}
+                              <div className="flex-1 overflow-y-auto pr-2 scrollable-clients">
+                                  <p className="text-sm text-[#1e3a8a] leading-relaxed" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', lineHeight: '1.7' }}>
+                                      <span style={{ fontWeight: 600, color: '#4f46e5' }}>Sthapatya Consultants Pvt. Ltd.</span>, with <span style={{ fontWeight: 600 }}>25+ years</span> of innovation, precision, and technology, transforms municipal governance across <span style={{ fontWeight: 600, color: '#2563eb' }}>150+ ULBs</span> in Maharashtra and India. Our <span style={{ fontWeight: 600 }}>800+ team</span>—civil engineers, software developers, GIS experts, and field specialists—blends field accuracy with digital intelligence in property tax surveys, GIS-based asset mapping, e-governance, and smart municipal solutions.
+                                  </p>
+
+                                  <p className="text-sm text-[#2563eb] leading-relaxed mt-3" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', lineHeight: '1.7' }}>
+                                      Powered by proprietary software platforms, mobile apps, and analytics dashboards, we deliver transparent, efficient, revenue-focused systems. Evolving from manual surveys to <span style={{ fontWeight: 600, color: '#1e3a8a' }}>AI-driven smart governance</span>, we uphold integrity, trust, and performance while advancing with AI, cloud infrastructure, blockchain-enabled verification, and citizen-centric mobile solutions.
+                                  </p>
+
+                                  <p className="text-sm text-[#1e3a8a] leading-relaxed mt-3 italic" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', lineHeight: '1.7', fontWeight: 600 }}>
+                                      At Sthapatya, we don't just build systems—we build confidence, compliance, and capability for a stronger, more connected municipal future.
+                                  </p>
+                              </div>
+
+                              {/* Bottom Stats Bar */}
+                              <div className="mt-4 pt-4 border-t-2 border-[#4f46e5]/10">
+                                  <div className="grid grid-cols-4 gap-2">
+                                      <div className="text-center">
+                                          <div className="text-xl text-[#4f46e5]" style={{ fontWeight: 700 }}>25+</div>
+                                          <div className="text-[10px] text-[#1e3a8a]">Years</div>
+                                      </div>
+                                      <div className="text-center">
+                                          <div className="text-xl text-[#4f46e5]" style={{ fontWeight: 700 }}>150+</div>
+                                          <div className="text-[10px] text-[#1e3a8a]">ULBs</div>
+                                      </div>
+                                      <div className="text-center">
+                                          <div className="text-xl text-[#4f46e5]" style={{ fontWeight: 700 }}>800+</div>
+                                          <div className="text-[10px] text-[#1e3a8a]">Team</div>
+                                      </div>
+                                      <div className="text-center">
+                                          <div className="text-xl text-[#4f46e5]" style={{ fontWeight: 700 }}>50L+</div>
+                                          <div className="text-[10px] text-[#1e3a8a]">Properties</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </motion.div>
+                  </div>
           </div>
 
           {/* Button on the left */}
