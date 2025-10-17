@@ -11,6 +11,7 @@ import { AnimatedButton } from "./AnimatedButton";
 import { ServiceFlower } from "./ServiceFlower";
 import {InteractiveKmlMap} from "./InteractiveKmlMap"
 import { districtData } from "./districtData"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 // Optimized Service Slideshow Component
 function ServiceSlideshow() {
   const services = [
