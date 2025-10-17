@@ -189,8 +189,12 @@ function AboutSection({ scrollToSection }: { scrollToSection: (id: string) => vo
           >
             <h2 className="text-4xl md:text-5xl text-[#1e3a8a] mb-2">Who We Are</h2>
             <p className="text-lg text-[#2563eb] max-w-4xl mx-auto leading-relaxed">
-              Leading municipal consultants specializing in GIS-based property tax surveys and comprehensive IT solutions 
-              for property tax assessment and collection across Maharashtra State
+                          Transforming Governance Through Data, Technology & Dedication.”
+                          •	“25 Years of Trusted Municipal Innovation.”
+                          •	“From Ground Reality to Digital Clarity.”
+                          •	“Smart Systems. Smarter Cities.”
+                          •	“Building the Future of Urban Administration.”
+
             </p>
           </motion.div>
           
